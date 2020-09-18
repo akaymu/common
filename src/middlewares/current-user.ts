@@ -1,3 +1,8 @@
+/**
+ * Türü: Middleware
+ * Request -> session -> jwt' yi varsa alıp parse edip  
+ * Request -> currentUser 'e eşitler.
+ */
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 
