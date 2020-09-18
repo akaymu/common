@@ -8,3 +8,4 @@ export * from './errors/request-validation-error';
 
 // Middlewares
 export * from './middlewares/error-handler';
+export * from './middlewares/current-user';
