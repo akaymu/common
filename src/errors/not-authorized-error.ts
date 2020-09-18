@@ -4,13 +4,13 @@ export class NotAuthorizedError extends CustomError {
   statusCode = 401;
 
   constructor() {
-    super('Not authorized');
+    super('Yetki hatası oluştu.');
 
     // Only because we are extending a built in class
     Object.setPrototypeOf(this, NotAuthorizedError.prototype);
   }
 
   serializeErrors() {
-    return [{ message: 'Not authorized' }];
+    return [{ message: 'Yetki hatası oluştu.' }];
   }
 }
