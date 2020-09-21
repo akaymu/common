@@ -13,3 +13,12 @@ export * from './middlewares/current-user';
 export * from './middlewares/validate-request';
 export * from './middlewares/require-auth';
 export * from './middlewares/require-admin';
+
+// Events
+export * from './events/subjects';
+export * from './events/base-publisher';
+export * from './events/base-listener';
+export * from './events/user-created-event';
+export * from './events/user-updated-event';
+export * from './events/user-deleted-event';
+export * from './events/password-forgotten-event';
