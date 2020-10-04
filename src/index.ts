@@ -22,3 +22,6 @@ export * from './events/user-created-event';
 export * from './events/user-updated-event';
 export * from './events/user-deleted-event';
 export * from './events/password-forgotten-event';
+
+// Users
+export * from './users/user-actions';

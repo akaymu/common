@@ -6,11 +6,16 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 
+import { UserTypes } from '../users/user-types';
+
 interface UserPayload {
   id: string;
-  email: string;
+  email?: string;
+  username?: string;
   isActivated: boolean;
-  isAdmin: boolean;
+  userType: UserTypes;
+  superUser?: string;
+  subUsers?: string[];
 }
 
 declare global {
