@@ -4,13 +4,13 @@ export class ForbiddenError extends CustomError {
   statusCode = 403;
 
   constructor() {
-    super('Erişim hakkı yoktur.');
+    super('Bu işlemi gerçekleştirme hakkınız bulunmamaktadır.');
 
     // Only because we are extending a built in class
     Object.setPrototypeOf(this, ForbiddenError.prototype);
   }
 
   serializeErrors() {
-    return [{ message: 'Erişim hakkı yoktur.' }];
+    return [{ message: 'Bu işlemi gerçekleştirme hakkınız bulunmamaktadır. Lütfen sistem yöneticisi ile irtibata geçiniz.' }];
   }
 }

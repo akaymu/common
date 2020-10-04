@@ -13,6 +13,7 @@ export * from './middlewares/current-user';
 export * from './middlewares/validate-request';
 export * from './middlewares/require-auth';
 export * from './middlewares/require-admin';
+export * from './middlewares/require-permission';
 
 // Events
 export * from './events/subjects';

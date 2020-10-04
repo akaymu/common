@@ -10,12 +10,9 @@ import { UserTypes } from '../users/user-types';
 
 interface UserPayload {
   id: string;
-  email?: string;
-  username?: string;
+  username: string;
   isActivated: boolean;
   userType: UserTypes;
-  superUser?: string;
-  subUsers?: string[];
 }
 
 declare global {
