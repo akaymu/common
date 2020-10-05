@@ -23,6 +23,7 @@ export * from './events/user-created-event';
 export * from './events/user-updated-event';
 export * from './events/user-deleted-event';
 export * from './events/password-forgotten-event';
+export * from './events/activation-needed-event';
 
 // Users
 export * from './users/user-actions';

@@ -1,10 +1,9 @@
 import { Subjects } from './subjects';
 
-export interface UserDeletedEvent {
-  subject: Subjects.UserDeleted;
+export interface ActivationNeededEvent {
+  subject: Subjects.ActivationNeeded;
   data: {
     id: string;
     username: string;
-    version: number;
   };
 };

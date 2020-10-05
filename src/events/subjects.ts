@@ -6,4 +6,5 @@ export enum Subjects {
   UserDeleted = 'user:deleted',
 
   PasswordForgotten = 'password:forgotten',
+  ActivationNeeded = 'activation:needed',
 }

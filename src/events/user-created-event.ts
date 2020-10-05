@@ -4,8 +4,11 @@ export interface UserCreatedEvent {
   subject: Subjects.UserCreated;
   data: {
     id: string;
-    email: string;
+    username: string;
     isActivated: boolean;
+    userType: string;
+    superUser?: string;
+    subUsers?: string[];
     version: number;
   };
 };
