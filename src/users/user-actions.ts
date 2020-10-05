@@ -3,61 +3,69 @@ import { AuthActionTypes } from './action-types';
 
 const userActions: { [key in keyof typeof UserTypes]: string[] } = {
   freetrial: [
-    AuthActionTypes.ChangePassword
+    AuthActionTypes.DELETE_SELF,
+    AuthActionTypes.UPDATE_SELF,
+    AuthActionTypes.SHOW_SELF
   ],
   admin: [
-    AuthActionTypes.AdminNewUser,
-    AuthActionTypes.AdminIndexUser,
-    AuthActionTypes.AdminShowUser,
-    AuthActionTypes.AdminIndexSuperUser,
-    AuthActionTypes.AdminIndexSubUser,
-    AuthActionTypes.AdminUpdateUser,
-    AuthActionTypes.AdminDeleteUser,
-    AuthActionTypes.DeleteUser,
-    AuthActionTypes.ChangePassword
+    AuthActionTypes.DELETE_SELF,
+    AuthActionTypes.UPDATE_SELF,
+    AuthActionTypes.SHOW_SELF,
+    AuthActionTypes.DELETE_USER,
+    AuthActionTypes.SHOW_USER,
+    AuthActionTypes.UPDATE_USER,
+    AuthActionTypes.CREATE_USER,
+    AuthActionTypes.INDEX_USER
   ],
   publisher: [
-    AuthActionTypes.DeleteUser,
-    AuthActionTypes.NewSubUser,
-    AuthActionTypes.IndexSubUser,
-    AuthActionTypes.DeleteSubUser,
-    AuthActionTypes.ShowSubUser,
-    AuthActionTypes.UpdateSubUser,
-    AuthActionTypes.ChangePassword
+    AuthActionTypes.DELETE_SELF,
+    AuthActionTypes.UPDATE_SELF,
+    AuthActionTypes.SHOW_SELF,
+    AuthActionTypes.NEW_SUBUSER,
+    AuthActionTypes.INDEX_SUBUSER,
+    AuthActionTypes.DELETE_USER,
+    AuthActionTypes.SHOW_USER,
+    AuthActionTypes.UPDATE_USER
   ],
   employee: [
-    AuthActionTypes.DeleteUser,
-    AuthActionTypes.ChangePassword
+    AuthActionTypes.DELETE_SELF,
+    AuthActionTypes.UPDATE_SELF,
+    AuthActionTypes.SHOW_SELF
   ],
   author: [
-    AuthActionTypes.DeleteUser,
-    AuthActionTypes.ChangePassword
+    AuthActionTypes.DELETE_SELF,
+    AuthActionTypes.UPDATE_SELF,
+    AuthActionTypes.SHOW_SELF
   ],
   enterprise: [
-    AuthActionTypes.DeleteUser,
-    AuthActionTypes.NewSubUser,
-    AuthActionTypes.IndexSubUser,
-    AuthActionTypes.DeleteSubUser,
-    AuthActionTypes.ShowSubUser,
-    AuthActionTypes.UpdateSubUser,
-    AuthActionTypes.ChangePassword,
-    AuthActionTypes.IndexSubSuperUser
+    AuthActionTypes.DELETE_SELF,
+    AuthActionTypes.UPDATE_SELF,
+    AuthActionTypes.SHOW_SELF,
+    AuthActionTypes.NEW_SUBUSER,
+    AuthActionTypes.INDEX_SUBUSER,
+    AuthActionTypes.DELETE_USER,
+    AuthActionTypes.SHOW_USER,
+    AuthActionTypes.UPDATE_USER
   ],
   teacher: [
-    AuthActionTypes.DeleteUser,
-    AuthActionTypes.NewSubUser,
-    AuthActionTypes.IndexSubUser,
-    AuthActionTypes.DeleteSubUser,
-    AuthActionTypes.ShowSubUser,
-    AuthActionTypes.UpdateSubUser,
-    AuthActionTypes.ChangePassword
+    AuthActionTypes.DELETE_SELF,
+    AuthActionTypes.UPDATE_SELF,
+    AuthActionTypes.SHOW_SELF,
+    AuthActionTypes.NEW_SUBUSER,
+    AuthActionTypes.INDEX_SUBUSER,
+    AuthActionTypes.DELETE_USER,
+    AuthActionTypes.SHOW_USER,
+    AuthActionTypes.UPDATE_USER
   ],
   student: [
-    AuthActionTypes.ChangePassword
+    AuthActionTypes.DELETE_SELF,
+    AuthActionTypes.UPDATE_SELF,
+    AuthActionTypes.SHOW_SELF
   ],
   user: [
-    AuthActionTypes.DeleteUser,
-    AuthActionTypes.ChangePassword
+    AuthActionTypes.DELETE_SELF,
+    AuthActionTypes.UPDATE_SELF,
+    AuthActionTypes.SHOW_SELF
   ],
 };
 
