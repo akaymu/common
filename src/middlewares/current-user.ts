@@ -13,6 +13,8 @@ interface UserPayload {
   username: string;
   isActivated: boolean;
   userType: UserTypes;
+  superUser?: string;
+  subUsers?: string[];
 }
 
 declare global {
