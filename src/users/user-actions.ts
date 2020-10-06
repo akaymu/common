@@ -28,7 +28,6 @@ const userActions: { [key in keyof typeof UserTypes]: string[] } = {
     AuthActionTypes.UPDATE_USER
   ],
   employee: [
-    AuthActionTypes.DELETE_SELF,
     AuthActionTypes.UPDATE_SELF,
     AuthActionTypes.SHOW_SELF
   ],
@@ -58,7 +57,6 @@ const userActions: { [key in keyof typeof UserTypes]: string[] } = {
     AuthActionTypes.UPDATE_USER
   ],
   student: [
-    AuthActionTypes.DELETE_SELF,
     AuthActionTypes.UPDATE_SELF,
     AuthActionTypes.SHOW_SELF
   ],
