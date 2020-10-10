@@ -14,7 +14,7 @@ interface UserPayload {
   isActivated: boolean;
   userType: UserTypes;
   superUser?: string;
-  subUsers?: string[];
+  subUsers: string[];
 }
 
 declare global {
