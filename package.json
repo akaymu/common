@@ -1,6 +1,6 @@
 {
   "name": "@oka-web/common",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "this is common package for oka web project",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
