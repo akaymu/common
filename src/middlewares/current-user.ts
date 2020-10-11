@@ -13,7 +13,7 @@ interface UserPayload {
   username: string;
   isActivated: boolean;
   userType: UserTypes;
-  superUser?: string;
+  superUser: string;
   subUsers: string[];
 }
 
