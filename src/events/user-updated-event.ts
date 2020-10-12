@@ -7,8 +7,8 @@ export interface UserUpdatedEvent {
     username: string;
     isActivated: boolean;
     userType: string;
-    superUser?: string;
-    subUsers?: string[];
+    superUser: string;
+    subUsers: string[];
     version: number;
   };
 };
