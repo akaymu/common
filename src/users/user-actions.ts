@@ -100,4 +100,9 @@ const userActions: { [key in keyof typeof UserTypes]: string[] } = {
   ],
 };
 
-export { UserTypes, AuthActionTypes, userActions as actions };
+export {
+  UserTypes,
+  AuthActionTypes,
+  ProfileActionTypes,
+  userActions as actions
+};
